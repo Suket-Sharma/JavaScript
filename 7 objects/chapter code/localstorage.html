@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>localStorage</title>
+</head>
+<body>
+  <script>
+    let product ={
+      name:'suket',
+      age:'32',
+      rating:{
+        star:5,
+        reviews:'great',
+      }
+    }
+    localStorage.setItem('name','kg coding');
+    console.log(localStorage.getItem('name'));
+
+    localStorage.setItem('product',JSON.stringify(product));
+    console.log(JSON.parse(localStorage.getItem('product')));
+    localStorage.removeItem('name');
+    localStorage.clear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+DOM PROPERTIES AND METHOD
+=> Dom and Elements PROPERTIES
+1. Location
+2. title
+3. href
+4. domain
+5. innerHTML
+6. innerText
+7. classList
+
+=> DOM and Element METHOD
+1. getElementById
+2. querySelector
+3. classList:add(),remove()
+4. createElement()
+5. appendChild()
+6. removeChild()
+7. replaceChild()

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date and time </title>
+</head>
+<body>
+  
+  <script>
+    let myDate = new Date();
+    let name = "Suket Sharma";
+    // console.log(myDate);
+    // console.log(myDate.getDay());
+    // console.log(myDate.getFullYear());
+    console.log(myDate.getHours());
+
+    if(myDate.getHours()==1 && myDate.getHours()<=12){
+      console.log(`Good Morning  ${name}`);
+    }else if(myDate.getHours()>=13 && myDate.getHours()<=18){
+      console.log(`Good Evening  ${name}`);
+    }else{
+      console.log(`Good Night  ${name}`);
+    }
+
+
+
+
+
+    // console.log(myDate.getMilliseconds());
+    // console.log(myDate.getMinutes());
+    // console.log(myDate.getMonth());
+    // console.log(myDate.getSeconds());
+    // console.log(myDate.getTimezoneOffset());
+    
+    
+  </script>
+</body>
+</html>

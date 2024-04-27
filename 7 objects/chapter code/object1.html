@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert to string</title>
+</head>
+<body>
+  <script>
+    let product ={
+      name:'suket',
+      age:'32',
+      rating:{
+        star:5,
+        reviews:'great',
+      }
+    }
+    console.log(typeof product);
+    console.log(product);
+    let str = JSON.stringify(product);
+    console.log(str);
+    let newProduct = JSON.parse(str);
+    console.log(typeof newProduct);
+    console.log(newProduct);
+  </script>
+</body>
+</html>

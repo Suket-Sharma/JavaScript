@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom</title>
+  <style>
+    .my-btn{
+      height: 50px;
+      width: 50px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .even{
+      background-color: green;
+    }
+    .odd{
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Click the Button </h1>
+  <button class="my-btn" onclick="pressed()" >0</button>
+  <script>
+    let count = localStorage.getItem('count')||0;
+    function pressed(){
+      count++;
+      localStorage.setItem('count',count);
+      updateButton();
+    }
+
+    function updateButton(){
+      
+      let button=document.querySelector('.my-btn');
+      if(count%2===0){
+        button.classList.remove('odd');
+        button.classList.add('even');
+      }else{       
+        button.classList.remove('even');
+        button.classList.add('odd');
+      }
+      button.innerText=count; 
+    }
+  </script>
+</body>
+</html>

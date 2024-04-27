@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let numbers =[1,4,5,7,8,6,9,3];
+    console.log(numbers);
+    console.log(numbers[3]);
+
+    let doosra = [1,null,true,'udgihd'];
+    console.log(doosra);
+    console.log(typeof doosra[2]);
+      
+    //check if variable is an array
+    console.log(Array.isArray(doosra));
+
+    //add and element to an end
+    doosra.push('yadav');
+    console.log(doosra);
+
+    //remove an element to an end and return 
+    console.log(doosra.pop());
+    console.log(doosra);
+
+    //shift() removes the first item of an array:
+    doosra.shift();
+    console.log(doosra);
+
+    //unshift() adds new items to the beginning of an array:
+    doosra.unshift('apple',234);
+    console.log(doosra);
+
+    //The Array.splice() method adds array elements:
+    doosra.splice(0,2,'orange','mango');
+    console.log(doosra);
+
+    //toString() converts into string
+    doosra.toString();
+    console.log(doosra);
+
+    //sort for sorting
+    let arr1 = [9,8,5,7,6];
+    console.log(arr1);
+    arr1.sort();
+    console.log(arr1);
+
+    //valueof()
+    console.log(arr1.valueOf());
+    let arr2 = arr1;
+    arr2[0]=99;
+    console.log(arr2);
+
+    //Destructuring 
+    let[a,b,c,d,e] = arr2;
+    console.log(a + " " + b +" " + c +" " + d +" " + e);
+
+
+
+    
+  </script>
+</body>
+</html>

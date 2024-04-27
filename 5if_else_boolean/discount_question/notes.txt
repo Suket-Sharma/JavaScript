@@ -1,0 +1,6 @@
+1. Give discount based on age , gender on metro ticket.
+=>Females get 50% off
+=>kids under 5 five years of age are free
+=>kids up to 8 years have half ticket
+=>People over age 65 will have to pay on 30% of the ticket
+=>In case of multiple discounts max discount will apply.

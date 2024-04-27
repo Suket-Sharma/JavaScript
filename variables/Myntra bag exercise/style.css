@@ -1,0 +1,18 @@
+.btn-1{
+  background-color: rgb(125, 197, 125);
+  padding: 10px 20px;
+  border: none;
+  border-radius:20px;
+  color: green;
+  cursor: pointer;
+}
+.btn-2{
+  padding: 10px 30px;
+  font:bold;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer; 
+  text-transform: uppercase;     
+}

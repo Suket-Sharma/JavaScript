@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Third</title>
+</head>
+<body>
+  
+  <script>
+    let divElement = document.createElement("div");
+    let h1Element=document.createElement("h1");
+    h1Element.innerText="Hi this is JS";
+    divElement.appendChild(h1Element);
+    console.log(divElement);
+
+    let btn = document.createElement('button');
+    btn.classList.add('btn');
+    btn.id="hero";
+    btn.innerText="click me ";
+    console.log(btn);
+    btn.style.backgroundColor="red";
+    btn.style.color="white";
+    btn.style.padding='5px';
+    btn.style.border='none';
+    btn.style.borderRadius='5px';
+
+    let behaviour = event=>btn.style.padding='10px';
+    
+    btn.addEventListener('click',function(){
+      setTimeout(behaviour,2000);
+    });
+
+
+    document.body.appendChild(btn);
+
+
+    
+
+  </script>
+</body>
+</html>

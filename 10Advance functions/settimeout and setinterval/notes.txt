@@ -1,0 +1,9 @@
+SetTimeout and SetInterval
+1. Function to run code asynchronously after a delay.
+2. SetTimeout runs once ,SetInterval runs repeatedly
+3. SetTimeout:
+  * Syntax : SetTimeout(Function,time)
+  * cancel : clearTimeout(timerId)
+4. SetInterval:
+  * Syntax : SetInterval(Function,time)
+  * Cancel : clearInterval(intervalID)

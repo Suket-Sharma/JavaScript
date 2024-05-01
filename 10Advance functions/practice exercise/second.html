@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second</title>
+</head>
+<body>
+  
+  <script>
+    let runtwice = function(num1,num2,num3,sum){
+      let sum1 = sum(num1,num2);
+      return sum(sum1,num3);
+    }
+    console.log(runtwice(5,6,7,sum));
+  </script>
+</body>
+</html>

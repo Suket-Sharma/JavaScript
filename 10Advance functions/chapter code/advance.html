@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonynous Function</title>
+</head>
+<body>
+
+  <!-- Anonynous Function
+  1. Functions in JAVASCRIPT are first Class citizen;
+  2. They can be assigned to a variable
+  3. functions defined without a name ofthen assigned to a variable
+  4. Can be passed as arguments to other function
+  5. Invoked Using () after the function name or variable
+  6. console.log(myfunction); and typeof myfunction both indicate its a function   -->
+  <script>
+    let sum = function(num1,num2){
+      return num1+num2;
+    }
+    console.log(sum(2,3));
+    let sum1=sum;
+    console.log(sum1(10,20));
+
+    let sumThreeNumbers = function(num1,num2,num3,sumTwoNumbers){
+      let sum1 = sumTwoNumbers(num1,num2);
+      return sumTwoNumbers(sum1,num3);
+    }
+    console.log(sumThreeNumbers(1,2,3,sum));
+
+    console.log(sumThreeNumbers);
+    console.log(typeof sumThreeNumbers);
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow Function</title>
+</head>
+<body>
+  <!--Arrow Function
+  1. A consice way to write Anonymous Function
+  2. For single Argument-Round bracked optional
+  3. For single line - Curly brackets and return optional
+  4. Ofter used when passing funtions as arguments -->
+
+  <script>
+    //anonymous function
+    let sum = function(num1,num2){
+      return num1+num2;
+    }
+    console.log(sum(1,2));
+
+    //2.For single Argument-Round bracked optional
+    let sum1 = (num1,num2)=>{
+      return num1+num2;
+    }
+    console.log(sum1(2,2));
+
+    //3.For single line - Curly brackets and return optional
+    let sum2 = (num1,num2)=> num1+num2;
+    console.log(sum2(3,2));
+
+    //4.Ofter used when passing funtions as arguments
+    let Square = num1=> num1*num1;
+    console.log(Square(4));
+  </script>
+</body>
+</html>

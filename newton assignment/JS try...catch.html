@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS try...catch</title>
+  </head>
+  <body>
+    <!-- Complete the function handleCallback which has a single argument callback, which may or may not be a function. Create a try, and catch block. Call the callback function inside the try block. In case callback is not a function, an error will be thrown which should be caught in the catch block. The catch block should print "error thrown" to the console.
+  Note: To check the expected output, we have already created a anyCallback function which prints "No error thrown" to the console. Just add anyCallback function without the parenthesis, to the input field to check the result. -->
+
+    <script>
+      function handleCallback(callback) {
+        // write your code here
+        try {
+          callback();
+        } catch (err) {
+          console.log("error thrown");
+        }
+      }
+    </script>
+  </body>
+</html>

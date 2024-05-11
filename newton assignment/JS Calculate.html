@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calculate</title>
+  </head>
+  <body>
+    <!-- Create a function named "calculate" which takes in three arguments. The first and the second arguments are numbers and the third argument is a mathematical operator in the form of a string. The function performs mathematical calculations between the two numbers on the basis of the operator passed as the third argument and prints the result in the console. -->
+
+    <script>
+      // Your code here
+      function calculate(num1, num2, operator) {
+        if (operator === "+") {
+          console.log(num1 + num2);
+        } else if (operator === "-") {
+          console.log(num1 - num2);
+        } else if (operator === "*") {
+          console.log(num1 * num2);
+        } else if (operator === "/") {
+          if (num2 !== 0) {
+            console.log(num1 / num2);
+          } else {
+            console.log("Error:Division by zero is not allowed");
+          }
+        } else {
+          console.log("Error:Invalid operator");
+        }
+      }
+    </script>
+  </body>
+</html>

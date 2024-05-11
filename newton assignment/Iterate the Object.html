@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iterate the Object</title>
+  </head>
+  <body>
+    <!-- Complete the function solve which takes obj as a parameter which is an object. Iterate obj using a for of and a for in loop. The for...of loop should print all the values of the obj in the console and the for...in loop should print the key and values of obj in the format {key}: {value}. See the example for more clarity.
+  Note: Generate Expected Output section will not work for this question. -->
+
+    <script>
+      function solve(obj) {
+        // Iterate using for of loop
+        for (const key of Object.keys(obj)) {
+          console.log(obj[key]);
+        }
+        for (const key in obj) {
+          console.log(`${key}: ${obj[key]}`);
+        }
+      }
+      // Iterate using for in loop
+    </script>
+  </body>
+</html>

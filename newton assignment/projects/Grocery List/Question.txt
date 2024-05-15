@@ -1,0 +1,13 @@
+Grocery list
+One of the important features of a grocery list is the calculation of the Grand Total. Grand Total is just the sum of the price of all items. Details
+We have created a small version of a grocery list that consists of some items.
+The price of each is written in a tr element with a data attribute data-ns-test=price.
+There is a Total button, your task is to add functionality to this button.
+On click event of this button, the function calcTotal to be executed
+Write a code in calcTotal to calculate the cost of all items and write it inside a row and append it to the table.
+The new row should have two columns one with Text Grand Total and the other should contain the total price along with an attribute data-ns-test=grandTotal, for example, <tr><td>Grand Total</td><td data-ns-test="grandTotal">303</td></tr>
+If calcTotal is executed for the second time you have to update the last row with the new grand total price .
+Follow the example given at the end.
+Acceptance criteria
+Correct Grand Total.
+Removal of previous Grand Total.

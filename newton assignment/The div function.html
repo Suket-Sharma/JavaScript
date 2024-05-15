@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The div function</title>
+  </head>
+  <body>
+    <!-- You are tasked with enhancing a webpage by adding functionality that allows for the dynamic creation of <div> elements based on user inputs or predefined parameters. These <div> elements should be customizable in terms of size and content. The goal is to write a JavaScript function that can create and append these elements to a specified container on the webpage.
+    Requirements: 
+    Function Definition:    
+    Write a function named createDiv that takes three parameters: width, height, and text.
+    width and height parameters should determine the size of the <div> element in pixels.
+    text parameter should specify the text content of the <div> element.
+    Element Styling and Content:    
+    Within the createDiv function, dynamically create a new <div> element.
+    Set the width and height of the <div> using the provided parameters, ensuring these values are treated as pixels.
+    Set the text content of the <div> to the provided parameter.
+    Add the default background color of this div to blue. 
+    DOM Manipulation:    
+    Append the newly created <div> element to a container element on the webpage identified by the ID container.    
+    Note:
+    1. The createDiv function is globally accessible as it is attached to the window object in the boilerplate code, it  allows to call from anywhere in your JavaScript code. 
+    2. Do not modify the HTML code.  -->
+
+    <div id="container"></div>
+
+    <script>
+      //Write your code here
+      function createDiv(width, height, text) {
+        var newDiv = document.createElement("div");
+        newDiv.style.width = width + "px";
+        newDiv.style.height = height + "px";
+        newDiv.textContent = text;
+        var containerDiv = document.getElementById("container");
+        containerDiv.appendChild(newDiv);
+      }
+      createDiv(400, 500, "Hello World!");
+      // Do not change this code
+      Window.createDiv = createDiv;
+    </script>
+  </body>
+</html>

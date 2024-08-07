@@ -1,0 +1,48 @@
+1. Synchronous :-
+Synchronous means the code runs in a particular sequence of instruction given in the program . Each instruction waits for the previous instruction to complete its execution.
+
+2. ASynchronous : -
+Due to Synchronous programming, sometimes imp instruction gets blocked due to some previous instruction . which causes a delay in the UI . ASynchronous allows to execute next instruction immediately and doesnt block the flow .
+
+3. Callbacks :- 
+Callbacks are basically an argument to another function.
+
+4. Callback hell :- 
+Nested Callback stacked below one another forming a pyramid structure . (pyramid or doom)
+This style of programming becomes difficult to understant and manage.
+
+5. Promises :- 
+Promise is for "Eventual" completion of task. It is an object in JS . It is a solution to Callback hell.
+Syntax:
+let Promise = new Promise((resolve,reject){...})
+A JS Promise can be :-
+a.Pending :- The result is undefined
+b.Resolve :- The result is value(fulfilled) ---resolve(result)
+c.reject  :- The result is an error object ---reject(error)
+
+Promises .then() & .catch()
+Promise.then((res)=>{...})
+Promise.catch((err)->{...})
+
+6. Async-Await
+async function always return a promise.
+Await pauses the execution of its surrounding async function untill the promise is settled.
+Syntax:
+async function myFunction(){...}
+
+7. IIFI :- immediately Invoked function expression
+(async function (){
+        await asyncFunction1().then((res)=>{
+            console.log("done1",res);
+        })
+        await asyncFunction1().then((res)=>{
+            console.log("done2",res);
+        })
+        await asyncFunction1().then((res)=>{
+            console.log("done3",res);
+        })
+        await asyncFunction1().then((res)=>{
+            console.log("done4",res);
+        })
+      })();
+

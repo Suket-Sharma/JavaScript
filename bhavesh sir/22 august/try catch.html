@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Try catch</title>
+</head>
+<body>
+  <script>
+    function devide(a,b){
+      if(b===0){
+        throw "can't devide with 0";
+      }
+      return a/b;
+    }
+    try {
+      devide(2,0)
+    } catch (error) {
+      console.log(error);
+    }
+  </script>
+</body>
+</html>

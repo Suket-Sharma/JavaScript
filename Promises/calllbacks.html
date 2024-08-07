@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callbacks</title>
+</head>
+<body>
+  
+  <script>
+    function sum(a,b){
+      console.log(a+b);
+    }
+
+    function Callbacks(a,b,sumCallback){
+      return sumCallback(a,b);
+    }
+    Callbacks(3,5,sum);
+
+  </script>
+</body>
+</html>

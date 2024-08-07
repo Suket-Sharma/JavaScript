@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Includes</title>
+  </head>
+  <body>
+    <script>
+      //weather these array contains 2 or not?
+      const arr1 = [1, 2, 3, 4, 5, 6, 7];
+      function containsTwo(arr) {
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === 2) {
+            return true;
+          }
+        }
+        return false;
+      }
+      console.log(containsTwo(arr1)); // This will print true
+
+      // const arr = [1,2,3,4,5,6,7];
+      // const text=arr.includes(2);
+      // console.log(text);
+    </script>
+  </body>
+</html>

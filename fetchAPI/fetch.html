@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch API</title>
+</head>
+<body>
+  
+  <script>
+    const URL = "https://cat-fact.herokuapp.com/facts";
+    // let Promise = fetch(URL);
+    // console.log(Promise);
+    // Promise.then((response)=>{
+    //   return response.json();
+    // }).then((data)=>{
+    //   console.log(data[0]);
+    // })
+
+    const getFacts = async()=>{
+      let response = await fetch(URL);
+      console.log(response);
+      let data = await response.json();
+      console.log(data[0].text);
+    }
+    getFacts();    
+  </script>
+</body>
+</html>

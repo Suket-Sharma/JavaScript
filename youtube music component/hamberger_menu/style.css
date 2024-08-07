@@ -1,0 +1,106 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+}
+
+.hamburger-button {
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.hamburger-button span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-button.active span:first-child {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-button.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-button.active span:last-child {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.sidebar {
+  background-color: #333;
+  color: #fff;
+  padding: 0rem;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 50px);
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+.sidebar li:nth-child(1) {
+  margin-top: 30px;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.sidebar a.active {
+  background-color: #555;
+  padding: 10px 10px 10px 0;
+  border-radius: 5px;
+}
+
+.sidebar a i {
+  display: inline-block;
+}
+
+.sidebar-toggle a span {
+  display: none;
+}
+
+main {
+  margin-left: 250px;
+  padding: 1rem;
+  margin-top: 50px;
+}
+
+/* Toggle sidebar */
+.sidebar-toggle {
+  transform: translateX(-250px);
+}

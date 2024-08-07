@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promise</title>
+</head>
+<body>
+  <script>
+    const getPromise=()=>{
+      return new Promise((resolve,reject)=>{
+        console.log("this is best course");
+        resolve("success");
+        reject("network Error");
+      })
+    }
+    let promise = getPromise();
+    promise.then((res)=>{
+      console.log("yes",res);
+    })
+    promise.catch((rej)=>{
+      console.log("no",rej);
+    })
+
+  </script>
+</body>
+</html>
